@@ -30,8 +30,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-	<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -42,63 +43,132 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="index-page">
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
     </div>
 
     <!-- Header Section Begin -->
-    <header class="header">
-        <div class="row">
-            <div class="col-12 d-flex align-items-center">
-                <div class="col-2 d-flex justify-content-center">
-                    <div class="header__logo">
-                        <a href="./index.html"><img class="w-75" src="img/logos/160by160.png" alt=""></a>
-                    </div>
-                </div>
-				<!-- <div class="col-5 d-flex align-items-center justify-content-center"> -->
-                    <!-- <div class="d-flex" data-aos="fade-out" data-aos-delay="1000"> -->
-                         <!-- <h4 class="header_name mb-1">Real Estate Media</h4> -->
-						  <!-- <h3 class="text-small text-center mb-1">DXB</h3> -->
+<header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="col-12 position-relative d-flex justify-content-around align-items-end">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+			<img src="img/logos/160by160.png" alt="">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home<br></a></li>
+          <li><a href="./about.html">About</a></li>
+          <li class="dropdown"><a href="#"><span>Portfolio</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              
+              <li class="dropdown"><a href="#"><span>Photography</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#"></a>Real Estate</li> 
+                  <li><a href="#">Commercial</a></li>
+                  <li><a href="#">Life Style</a></li>
+                  <li><a href="#">Walk Through</a></li>
+                  <li><a href="#">Off-Plan</a></li>
+                </ul>
+              </li>
+			  <li class="dropdown"><a href="#"><span>Videography</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+			  <ul>
+                  <li><a href="#"></a>Real Estate</li> 
+                  <li><a href="#">360 Video</a></li>
+                  <li><a href="#">Life Style</a></li>
+                  <li><a href="#">Walk Through</a></li>
+                  <li><a href="#">Off-Plan</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Corporate</a></li>
+              <li><a href="#">Luxury Life-Style</a></li>
+			  <li><a href="#">Brand Curator</a></li>
+            </ul>
+          </li>
+		  <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+    <!-- <header class="header"> -->
+        <!-- <div class="row"> -->
+            <!-- <div class="col-12 d-flex align-items-center"> -->
+                <!-- <div class="col-2 d-flex justify-content-center"> -->
+                    <!-- <div class="header__logo"> -->
+                        <!-- <a href="./index.html"><img class="w-75" src="img/logos/160by160.png" alt=""></a> -->
                     <!-- </div> -->
                 <!-- </div> -->
-                <div class="col-7 d-flex justify-content-center">
-                    <div class="header__nav__option">
-                        <nav class="header__nav__menu mobile-menu">
-                            <ul>
-                                <li class="active"><a href="./index.html">Home</a></li>
-                                <li><a href="./about.html">About</a></li>
-                                <li><a href="./portfolio.html">Portfolio</a></li>
-								<li><a href="./pricing.html">Pricing</a></li>
-                                <!-- <li><a href="./services.html">Services</a></li> -->
-                                <!-- <li><a href="#">Pages</a> -->
-                                    <!-- <ul class="dropdown"> -->
-                                        <!-- <li><a href="./about.html">About</a></li> -->
-                                        <!-- <li><a href="./portfolio.html">Portfolio</a></li> -->
-                                        <!-- <li><a href="./blog.html">Blog</a></li> -->
-                                        <!-- <li><a href="./blog-details.html">Blog Details</a></li> -->
-                                    <!-- </ul> -->
-                                <!-- </li> -->
-                                <li><a href="./contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
-
-                    </div>
-                </div>
-				<div class="col-3 d-flex justify-content-center">
-				    <div class="header__nav__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-					</div>
-				</div>
-            </div>
+	
+	
+      <!-- <nav id="navmenu" class="col-7 navmenu"> -->
+        <!-- <ul> -->
+          <!-- <li><a href="index.html" class="active">Home</a></li> -->
+		   <!-- <li class="dropdown"><a href="#"><span>Portfolio</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a> -->
+            <!-- <ul> -->
+               <!-- <li class="dropdown"><a href="#"><span>Photography</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a> -->
+                <!-- <ul> -->
+                  <!-- <li class="dropdown"><a href="#"><span>Real Estate</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a> -->
+				    <!-- <ul> -->
+						<!-- <li><a href="#">Property Photoshoots</a></li> -->
+						<!-- <li><a href="#">Property Showcases</a></li> -->
+						<!-- <li><a href="#">Promotional Shoots</a></li> -->
+						<!-- <li><a href="#">Detailed Shoots</a></li> -->
+					<!-- </ul> -->
+				  <!-- </li> -->
+                  <!-- <li><a href="#">HeadShots</a></li> -->
+                  <!-- <li><a href="#">Luxury Lifestyle</a></li> -->
+                  <!-- <li><a href="#">Visual Branding</a></li> -->
+                <!-- </ul> -->
+              <!-- </li> -->
+              <!-- <li class="dropdown"><a href="#"><span>Videography</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a> -->
+                <!-- <ul> -->
+                  <!-- <li><a href="#">Property Tours</a></li> -->
+                  <!-- <li><a href="#">Promotional Teasers</a></li> -->
+                  <!-- <li><a href="#">3D Virtual Tours</a></li> -->
+                  <!-- <li><a href="#">Lifestyle / Community</a></li> -->
+                  <!-- <li><a href="#">Agent Walk Throughs</a></li> -->
+                <!-- </ul> -->
+              <!-- </li> -->
+			   <!-- <li class="dropdown"><a href="#"><span>Corporate</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a> -->
+			      <!-- <ul> -->
+					<!-- <li><a href="#">Events Photo/video</a></li> -->
+					<!-- <li><a href="#"> Corporate Shoots </a></li> -->
+					<!-- <li><a href="#">HeadShots</a></li> -->
+					<!-- <li><a href="#">Company Profile Photo/Video </a></li> -->
+                <!-- </ul> -->
+			   <!-- </li> -->
+              <!-- <li><a href="#">Luxury Life-Style</a></li> -->
+              <!-- <li><a href="#">Brand Curator</a></li> -->
+            <!-- </ul> -->
+          <!-- </li> -->
+          
+		 <!-- <li><a href="./about.html">About</a></li> -->
+         <!-- <li><a href="./pricing.html">Pricing</a></li> -->
+         <!-- <li><a href="./contact.html">Contact</a></li> -->
+          
+        <!-- </ul> -->
+      
+      <!-- </nav> -->
+                
+				 <!-- <div class="col-3 header__nav__social"> -->
+				   
+                            <!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
+                            <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+                            <!-- <a href="#"><i class="fa fa-dribbble"></i></a> -->
+                            <!-- <a href="#"><i class="fa fa-instagram"></i></a> -->
+                            <!-- <a href="#"><i class="fa fa-youtube-play"></i></a> -->
+				<!-- </div> -->
+				
+				<!-- <div id="mobile-menu-wrap"></div> -->
+            <!-- </div> -->
            
-        </div>
-		<div id="mobile-menu-wrap"></div>
+        <!-- </div> -->
+		
     </header>
     <!-- Header End -->
 
@@ -172,43 +242,47 @@
 	
 	    <!-- ======= Features Section ======= -->
     <section id="features" class="features">
-		<div class="row p-5" data-aos="fade-up">
+		<div class="row p-lg-5" data-aos="fade-up">
             <div class="col-12">
-                <div class="section-title pt-lg-5">
+                <div class="section-title pt-5">
 						<small class="small-heading px-2">What we do</small>
                         <h1 class="heading-text">ABOUT US</h1>
                 </div>
             </div>
         </div>
 
-        <div class="row p-5">
-		 <div class="col-12 d-flex">
-          <div class="col-xl-4 col-lg-4 video-box d-flex justify-content-center align-items-center" data-aos="zoom-in">
+        <div class="row px-lg-5 py-3">
+		 <div class="col-12 set-layout">
+          <div class="col-xl-4 col-lg-4 col-sm-12 py-sm-3 video-box d-flex justify-content-center align-items-center" data-aos="zoom-in">
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
 
-          <div class="col-xl-8 col-lg-8 d-flex flex-column justify-content-center py-5 px-lg-5">
+          <div class="col-xl-8 col-lg-8 d-flex flex-column justify-content-center">
             <div class="box-heading pl-lg-5" data-aos="fade-up">
-              <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-              <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate.</p>
+              <h3>Expanding needs of the Luxury Real Estate Market, Premium Brands, and High-end Service Providers</h3>
+              <p>Real Estate Media was established to address the expanding needs of the luxury real estate market, premium brands, and high-end service providers. 
+			  Our mission is to inspire affluent clients through exceptional video production. 
+			  By leveraging our expertise in creating visually stunning and engaging content, we aim to showcase the unique qualities of luxury properties and brands. 
+			  Our services are tailored to captivate and motivate discerning audiences, ensuring that each project we undertake reflects the sophistication and exclusivity associated with the luxury market.</p>
             </div>
 
             <div class="icon-box pl-lg-5" data-aos="fade-up">
-              <div class="icon"><i class="fa fa-film"></i></div>
-              <h4 class="title"><a href="">Content Creation</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <div class="icon"><i class="fa fa-file"></i></div>
+              <h4 class="title"><a href="">Planning</a></h4>
+              <p class="description">We conduct thorough research on your brand, align our strategy with your business goals, review past efforts, and analyze competitors' work. This allows us to develop media ideas that will set you apart. Following this, we brainstorm format, content, and messaging options.
+			  </p>
             </div>
 
             <div class="icon-box pl-lg-5" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="fa fa-code"></i></div>
-              <h4 class="title"><a href="">Web Design & Developement</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <div class="icon"><i class="fa fa-industry"></i></div>
+              <h4 class="title"><a href="">Production</a></h4>
+              <p class="description">After we finalize your plans and budgets, REM puts together a team with the necessary skills to execute your project. We aim to find the perfect balance between creative success and cost-efficient production, ensuring you receive the best product within your budget.</p>
             </div>
 
             <div class="icon-box pl-lg-5" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="fa fa-bullhorn"></i></div>
-              <h4 class="title"><a href="">Marketing / Branding</a></h4>
-              <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+              <div class="icon"><i class="fa fa-cloud-upload"></i></div>
+              <h4 class="title"><a href="">Post</a></h4>
+              <p class="description">Effective post-production begins with well-defined, mutually understood goals. This highly collaborative process involves client input to ensure the final product surpasses all expectations. We take special care to make the process both enjoyable and productive.</p>
             </div>
 
           </div>
@@ -222,183 +296,245 @@
 		<!-- <div class="col-12 d-flex justify-content-center"> -->
 			<!-- <h3 class="tagline"><span class="brilliance" data-aos="fade-up" data-aos-delay="200">Brilliance</span> &nbsp&nbsp <span class="business-tag" data-aos="fade-down" data-aos-delay="200">is our Business</span>  </h3> -->
 		<!-- </div> -->
-		<div class="row p-5" data-aos="fade-up">
+		<div class="row p-lg-5" data-aos="fade-up">
             <div class="col-lg-12">
-                <div class="section-title my-5">
+                <div class="section-title pt-5">
 						<small class="small-heading px-2">Providing Excellence</small>
                         <h1 class="heading-text">Our Services</h1>
                 </div>
             </div>
         </div>
 		
-		<div class="row px-5">
-			<div class="col-12 p-0">
+		<div class="row d-none d-lg-block px-5">
+			<div class="col-12 px-3">
 			<ul class="d-flex services-list">
-			  <li class="col-3">
+			  <li class="col-2 p-0">
 				<a class="d-flex active_cat">
 				  <i class="fa fa-camera"></i>
 				  <h4 class="d-none d-lg-block tab-heading">PHOTOGRAPHY</h4>
 				</a>
 			  </li>
-			  <li class="col-3">
+			  <li class="col-2">
 				<a class="d-flex">
 				  <i class="fa fa-video-camera"></i>
 				  <h4 class="d-none d-lg-block tab-heading">VIDEOGRAPHY</h4>
 				</a>
 			  </li>
-			  <li class="col-3">
+			  <li class="col-2 p-0">
 				<a class="d-flex">
-				  <i class="fa fa-calendar"></i>
-				  <h4 class="d-none d-lg-block tab-heading">EVENT SHOOTS</h4>
+				  <i class="fa fa-users"></i>
+				  <h4 class="d-none d-lg-block tab-heading">COOPRATE</h4>
 				</a>
 			  </li>
-			  <li class="col-3">
+			  <li class="col-3 pr-0">
 				<a class="d-flex">
 				  <i class="fa fa-picture-o"></i>
-				  <h4 class="d-none d-lg-block tab-heading">LIFE STYLE</h4>
+				  <h4 class="d-none d-lg-block tab-heading">LUXURY LIFE-STYLE</h4>
 				</a>
 			 </li>
+			 <li class="col-3">
+				<a class="d-flex">
+				  <i class="fa fa-registered"></i>
+				  <h4 class="d-none d-lg-block tab-heading">BRAND CURATOR</h4>
+				</a>
+			  </li>
+			</ul>
+			</div>
+		</div>
+		
+		<div class="row d-lg-none d-block">
+			<div class="col-12">
+			<ul class="d-flex services-list">
+			  <li class="">
+				<a class="d-flex active_cat">
+				  <i class="fa fa-camera"></i>
+				  <h4 class="d-none d-lg-block tab-heading">PHOTOGRAPHY</h4>
+				</a>
+			  </li>
+			  <li class="">
+				<a class="d-flex">
+				  <i class="fa fa-video-camera"></i>
+				  <h4 class="d-none d-lg-block tab-heading">VIDEOGRAPHY</h4>
+				</a>
+			  </li>
+			  <li class="">
+				<a class="d-flex">
+				  <i class="fa fa-users"></i>
+				  <h4 class="d-none d-lg-block tab-heading">COOPRATE</h4>
+				</a>
+			  </li>
+			  <li class="">
+				<a class="d-flex">
+				  <i class="fa fa-picture-o"></i>
+				  <h4 class="d-none d-lg-block tab-heading">LUXURY LIFE-STYLE</h4>
+				</a>
+			 </li>
+			 <li class="">
+				<a class="d-flex">
+				  <i class="fa fa-registered"></i>
+				  <h4 class="d-none d-lg-block tab-heading">BRAND CURATOR</h4>
+				</a>
+			  </li>
 			</ul>
 			</div>
 		</div>
        
-		<div class="row px-5" data-aos="fade-up">
+		<div class="row px-lg-5" data-aos="fade-up">
 			<div class="col-lg-12 col-md-12 col-sm-12 service-card showSlide mt-5">
-				<div class="col-8 p-5 service-card-content"> 
-					<div class="d-flex w-100">
-						<div class="w-50"> 
-								<h5 class="photo-intro"> Whether you need interior or exterior photography, aerial shots, or virtual tours,
-									Our team combines cutting-edge equipment with a keen eye for detail to ensure every image reflects the true essence of your property.
-								</h5>
+				<div class="col-lg-8 col-md-8 col-sm-12 p-2 p-lg-5 d-block d-lg-flex service-card-content"> 
+				
+					<div class="col"> 
+								<p class="photo-intro"> Flambient photography is frequently considered better than HDR in real estate photography because it combines controlled flash lighting with a natural ambiance.
+								</p>
 								<br/>
 								<br/>
 								<p class="fst-italic">
-								﻿We understand the importance of visual photo content in advertising.
-								That's why we offer photography services to help you stand out in a competitive market.
+								This approach creates more balanced and visually appealing images, with improved detail and more realistic colors than HDR photography.
 								</p>
-						</div>
+					</div>
 
-					<div class="d-flex justify-content-center align-items-center w-50">
+					<div class="col">
 						<ul>
-							<li><span class="fa fa-th-large"></span> Property Photoshoot </li>
-							<li><i class="fa fa-th-large"></i> New Launch Photoshoot </li>
-							<li><i class="fa fa-th-large"></i> Walk Through Photoshoot </li>
-							<li><i class="fa fa-th-large"></i> Construction Photoshoot </li>
-							<li><i class="fa fa-th-large"></i> Luxury Life Style Shoot </li>
-							<li><i class="fa fa-th-large"></i> Interviews & Podcast </li>
+							<li><i class="fa fa-th-large"></i> High-Resolution Property Photography </li>
+							<li><i class="fa fa-th-large"></i> Twilight and Sunset Photography </li>
+							<li><i class="fa fa-th-large"></i> Aerial Photography </li>
+							<li><i class="fa fa-th-large"></i> 360-Degree Photography </li>
+							<li><i class="fa fa-th-large"></i> Lifestyle and Detail Shots </li>
+							<li><i class="fa fa-th-large"></i> Interior and Exterior Staging </li>
 						</ul>
 					</div>
 
-				</div>
+			
 			</div>
 				
-			<div class="col-4 service-img">
+			<div class="col-lg-4 col-md-4 col-sm-12 service-img">
+				<img src="assets/img/tabs-1.jpg" alt="" class="img-fluid">
+			</div>
+	</div>
+			</div>
+			
+			<div class="col-lg-12 col-md-12 col-sm-12 service-card mt-5">
+				<div class="col-lg-8 col-md-8 col-sm-12 p-2 p-lg-5 d-block d-lg-flex service-card-content"> 
+						<div class="col"> 
+								<p class="photo-intro"> Enhance your property's charm with top-tier real estate videography in Dubai. Our skilled team excels in cinematic and captivating real estate videography, capturing the true essence of every listing
+								</p>
+								<br/>
+								<br/>
+								<p class="fst-italic">
+									Browse our portfolio to see our exceptional real estate videography, including unique drone footage for a fresh perspective.
+								</p>
+						</div>
+
+					<div class="col">
+						<ul>
+							<li><i class="fa fa-th-large"></i> Property Tours </li>
+							<li><i class="fa fa-th-large"></i> Cinematic Drone Footage </li>
+							<li><i class="fa fa-th-large"></i> Promotional Teasers </li>
+							<li><i class="fa fa-th-large"></i> 3D Virtual Tours </li>
+							<li><i class="fa fa-th-large"></i> Lifestyle and Community Videos </li>
+							<li><i class="fa fa-th-large"></i> Agent Walk Through Videos </li>
+						</ul>
+					</div>
+
+				
+			</div>
+				
+			<div class="col-lg-4 col-md-4 col-sm-12 service-img">
 				<img src="assets/img/tabs-1.jpg" alt="" class="img-fluid">
 			</div>
 
 			</div>
 			
-						<div class="col-lg-12 col-md-12 col-sm-12 service-card mt-5 px-5">
-				<div class="col-8 service-card-content"> 
-					<div class="d-flex w-100">
-						<div class="w-50"> 
-								<h5 class="photo-intro"> Whether you need interior or exterior photography, aerial shots, or virtual tours,
-									Our team combines cutting-edge equipment with a keen eye for detail to ensure every image reflects the true essence of your property.
-								</h5>
+			<div class="col-lg-12 col-md-12 col-sm-12 service-card mt-5">
+				<div class="col-lg-8 col-md-8 col-sm-12 p-2 p-lg-5 d-block d-lg-flex service-card-content"> 
+						<div class="col"> 
+								<p class="photo-intro">Our experienced team specializes in visual storytelling, capturing your most treasured moments with a cinematic touch. 
+								We are committed to delivering compelling visuals, pushing creative limits, and providing same-day edits.
+								</p>
 								<br/>
 								<br/>
 								<p class="fst-italic">
-								﻿	We understand the importance of visual video content in advertising.
-									That's why we offer photography services to help you stand out in a competitive market.
+								﻿	 As a client-centered company, we focus on your vision, making sure every photo and video reflects your unique story. Partner with us to set new industry standards and create lasting memories.
 								</p>
 						</div>
 
-					<div class="d-flex justify-content-center w-50">
+					<div class="col">
 						<ul>
-							<li><span class="stroke-text">1</span> Property Photoshoot </li>
-							<li><i class="fa fa-th-large"></i> New Launch Photoshoot </li>
-							<li><i class="fa fa-th-large"></i> Walk Through Photoshoot </li>
-							<li><i class="fa fa-th-large"></i> Construction Photoshoot </li>
-							<li><i class="fa fa-th-large"></i> Luxury Life Style Shoot </li>
-							<li><i class="fa fa-th-large"></i> Interviews & Podcast </li>
+							<li><i class="fa fa-th-large"></i> Company Videos </li>
+							<li><i class="fa fa-th-large"></i> Corporate Events </li>
+							<li><i class="fa fa-th-large"></i> Interactive Digital Displays </li>
+							<li><i class="fa fa-th-large"></i> Company Profile Videography </li>
+							<li><i class="fa fa-th-large"></i> Corporate Photography </li>
 						</ul>
 					</div>
 
-				</div>
 			</div>
 				
-			<div class="col-4 service-img">
+			<div class="col-lg-4 col-md-4 col-sm-12 service-img">
 				<img src="assets/img/tabs-1.jpg" alt="" class="img-fluid">
 			</div>
 
 			</div>
 			
-						<div class="col-lg-12 col-md-12 col-sm-12 service-card mt-5 px-5">
-				<div class="col-8 service-card-content"> 
-					<div class="d-flex w-100">
-						<div class="w-50"> 
-								<h5 class="photo-intro"> Whether you need interior or exterior photography, aerial shots, or virtual tours,
-									Our team combines cutting-edge equipment with a keen eye for detail to ensure every image reflects the true essence of your property.
-								</h5>
+			<div class="col-lg-12 col-md-12 col-sm-12 service-card mt-5">
+				<div class="col-lg-8 col-md-8 col-sm-12 p-2 p-lg-5 d-block d-lg-flex service-card-content"> 
+						<div class="col"> 
+								<p class="photo-intro"> At Real Estate Media, we specialize in presenting luxury properties with the sophistication and elegance they deserve. 
+								</p>
 								<br/>
 								<br/>
 								<p class="fst-italic">
-								﻿	We understand the importance of visual life content in advertising.
-									That's why we offer photography services to help you stand out in a competitive market.
+								﻿	Our luxury lifestyle services are designed to captivate discerning buyers and showcase the unparalleled beauty and exclusivity of high-end real estate.
 								</p>
 						</div>
 
-					<div class="d-flex justify-content-center w-50">
+					<div class="col">
 						<ul>
-							<li><span class="stroke-text">1</span> Property Photoshoot </li>
-							<li><i class="fa fa-th-large"></i> New Launch Photoshoot </li>
-							<li><i class="fa fa-th-large"></i> Walk Through Photoshoot </li>
-							<li><i class="fa fa-th-large"></i> Construction Photoshoot </li>
-							<li><i class="fa fa-th-large"></i> Luxury Life Style Shoot </li>
-							<li><i class="fa fa-th-large"></i> Interviews & Podcast </li>
+							<li><i class="fa fa-th-large"></i> High-End Property Shoots </li>
+							<li><i class="fa fa-th-large"></i> Bespoke Photography </li>
+							<li><i class="fa fa-th-large"></i> Exclusive Property Showcases </li>
+							<li><i class="fa fa-th-large"></i> Virtual Reality Tours </li>
+							<li><i class="fa fa-th-large"></i>  Lifestyle Content Creation </li>
+							<li><i class="fa fa-th-large"></i>  Concierge-Style Marketing Shoots </li>
+
 						</ul>
 					</div>
 
-				</div>
 			</div>
 				
-			<div class="col-4 service-img">
+			<div class="col-lg-4 col-md-4 col-sm-12 service-img">
 				<img src="assets/img/tabs-1.jpg" alt="" class="img-fluid">
 			</div>
 
 			</div>
 			
 			
-			<div class="col-lg-12 col-md-12 col-sm-12 service-card mt-5 px-5">
-				<div class="col-8 service-card-content"> 
-					<div class="d-flex w-100">
-						<div class="w-50"> 
-								<h5 class="photo-intro"> Whether you need interior or exterior photography, aerial shots, or virtual tours,
-									Our team combines cutting-edge equipment with a keen eye for detail to ensure every image reflects the true essence of your property.
-								</h5>
+			<div class="col-lg-12 col-md-12 col-sm-12 service-card mt-5">
+				<div class="col-lg-8 col-md-8 col-sm-12 p-2 p-lg-5 d-block d-lg-flex service-card-content"> 
+						<div class="col"> 
+								<p class="photo-intro">At Real Estate Media, we specialize in curating and elevating real estate brands to reflect sophistication, elegance, and market appeal. 
+								</p>
 								<br/>
 								<br/>
 								<p class="fst-italic">
-								﻿	We understand the importance of visual property content in advertising.
-									That's why we offer photography services to help you stand out in a competitive market.
+								﻿	Our brand curator services are designed to create a powerful, cohesive brand identity that resonates with your target audience and sets your properties apart in a competitive market.
 								</p>
 						</div>
 
-					<div class="d-flex justify-content-center w-50">
+					<div class="col">
 						<ul>
-							<li><span class="stroke-text">1</span> Property Photoshoot </li>
-							<li><i class="fa fa-th-large"></i> New Launch Photoshoot </li>
-							<li><i class="fa fa-th-large"></i> Walk Through Photoshoot </li>
-							<li><i class="fa fa-th-large"></i> Construction Photoshoot </li>
-							<li><i class="fa fa-th-large"></i> Luxury Life Style Shoot </li>
-							<li><i class="fa fa-th-large"></i> Interviews & Podcast </li>
+							<li><i class="fa fa-th-large"></i> Brand Identity Development </li>
+							<li><i class="fa fa-th-large"></i> Comprehensive Brand Strategy </li>
+							<li><i class="fa fa-th-large"></i> Brand Storytelling </li>
+							<li><i class="fa fa-th-large"></i> Content Creation and Management </li>
+							<li><i class="fa fa-th-large"></i> Visual Branding and Design </li>
+							<li><i class="fa fa-th-large"></i> Brand Management and Consulting </li>
 						</ul>
 					</div>
 
-				</div>
 			</div>
 				
-			<div class="col-4 service-img">
+			<div class="col-lg-4 col-md-4 col-sm-12 service-img">
 				<img src="assets/img/tabs-1.jpg" alt="" class="img-fluid">
 			</div>
 
@@ -609,7 +745,7 @@
 
     <!-- Work Section Begin -->
     <section class="work">
-		<div class="row mt-5">
+		<div class="row mt-5 d-none d-lg-block">
 				<div class="col-12 mission-tagline d-flex justify-content-center">
 					<h3 data-aos="fade-left" data-aos-delay="500"> Our Mission </h3> 
 					<h3 class="is-animation">&nbsp;is&nbsp;</h3>
@@ -617,8 +753,8 @@
 				</div>
 		</div>
 		<div class="row">
-            <div class="col-lg-12 p-5">
-                <div class="my-4"> 
+            <div class="col-lg-12 p-lg-5">
+                <div class="my-5"> 
 					<small class="small-heading">Work Portfolio</small>
                     <!-- <h1 class="service-heading">Portfolio</h1> -->
 					 <div data-aos="fade-left" data-aos-delay="500"> <h1>WE CREATE</h1> </div>
@@ -774,7 +910,13 @@
     <section id="reels" class="reels">
 	        <div class="row pt-5">
 			<!-- <div class="col-lg-12 d-flex"> -->
-				<div class="col-lg-4 col-md-6">
+			    <div class="col-12 p-lg-5">
+					<div class="heading-layout">
+						<small class="small-heading">Show Case</small>
+						<h1 class="heading-text"> <span class="stroke-text">What </span> <br/> <span> we do?</span> </h1>
+					</div>
+                </div>
+				<div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-delay="400">
 			    <a href="img/reels/video308.mp4" class="glightbox">
 					<video autoplay="" loop="" muted="" class="custom">
 						<source src="img/reels/video308.mp4" type="video/mp4">
@@ -782,14 +924,14 @@
 				</a>
             </div>
 			
-			<div class="col-lg-4 col-md-6">
+			<div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
 			    <a href="iimg/reels/video411.mp4" class="glightbox">
 					<video autoplay="" loop="" muted="" class="custom">
 						<source src="img/reels/video411.mp4" type="video/mp4">
 					</video>
 				</a>
 			</div>
-			<div class="col-lg-4 col-md-6">
+			<div class="col-lg-4 col-md-6" data-aos="fade-left" data-aos-delay="400">
 			    <a href="img/reels/video925.mp4" class="glightbox">
 					<video autoplay="" loop="" muted="" class="custom">
 						<source src="img/reels/video925.mp4" type="video/mp4">
@@ -806,7 +948,7 @@
 
     <!-- Call To Action Section Begin -->
     <section class="callto my-5">
-			<div class="col-12 d-flex justify-content-center">
+			<div class="col-12 d-none d-lg-flex justify-content-center">
 				<h3 class="tagline">
 					<span class="brilliance" data-aos="fade-up" data-aos-delay="200">Brilliance</span> 
 					&nbsp; 
@@ -814,9 +956,9 @@
 					<span class="business" data-aos="fade-down" data-aos-delay="200"> Business </span>
 					</h3>
 			</div>
-	        <div class="row pt-5">
+	        <div class="row my-5">
 			 
-			    <div class="col-12 p-5">
+			    <div class="col-12 p-lg-5">
 					<div class="heading-layout">
 						<small class="small-heading">Short Intro</small>
 						<h1 class="heading-text">Why Us?</h1>
@@ -825,45 +967,49 @@
             </div>
 			
 			<div class="row align-items-xl-center gy-5">
-			<div class="col-xl-5 p-5 bg-color" data-aos="fade-right" data-aos-delay="200">
+			<div class="col-xl-5 p-3 p-lg-5 bg-color" data-aos="fade-right" data-aos-delay="200">
 				<h3 class="success">
-					100% OF WHAT WE DO IS FOCUSED ON HELPING YOUR BUSINESS INCREASE REVENUE THROUGH INTEGRATED DIGITAL MARKETING STRATEGIES.
+					100% OF WHAT WE DO IS FOCUSED ON HELPING YOUR BUSINESS INCREASE REVENUE THROUGH INTEGRATED MEDIA AND MARKETING STRATEGIES.
 				</h3>
 			
 			</div>
 			
-			<div class="col-xl-7 pt-5 px-5">
+			<div class="col-xl-7 p-0 pt-5 px-lg-5">
 			<div class="row gy-4 icon-boxes">
 
-              <div class="col-md-6 py-5" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-md-6 py-lg-5" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box">
                   <i class="fa fa-building"></i>
-                  <h3>Modern and clean design</h3>
-                  <p>We embark on an awe-inspiring expedition through your treasure trove of data, including the thrilling realms of Google Analytics, Facebook Ads, and your oh-so-impressive CRM.</p>
+                  <h3>Passion for Real Estate</h3>
+                  <p>At REM, we don’t just showcase properties; we craft compelling narratives that turn listings into desirable destinations. 
+					Our team of skilled content creators blends creativity with market expertise to highlight the unique aspects of each property, ensuring they captivate and engage potential buyers.</p>
                 </div>
               </div> <!-- End Icon Box -->
 
-              <div class="col-md-6 py-5" data-aos="fade-up" data-aos-delay="300">
+              <div class="col-md-6 py-2 py-lg-5" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box">
                   <i class="fa fa-diamond"></i>
-                  <h3>Sell Products</h3>
-                  <p>We craft an integrated digital marketing strategy so astonishingly flexible that it can twist and turn like a contortionist to adapt to your ever-changing business goals, objectives.</p>
+                  <h3>Cutting-Edge Technology</h3>
+                  <p>We leverage the latest technology to present properties in their best light. 
+					From high-definition video tours and immersive 3D walkthroughs to drone photography and interactive floor plans, our tech-driven approach offers an unparalleled viewing experience that stands out in the crowded real estate market.</p>
                 </div>
               </div> <!-- End Icon Box -->
 
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box">
                   <i class="fa fa-line-chart"></i>
-                  <h3>Success Every Day</h3>
-                  <p> Whether you're here to boost your brand or squeeze those online sales, we've got you covered – because unlike some people, we actually deliver on our promises.</p>
+                  <h3>Tailored Content Strategies</h3>
+                  <p> No two properties are the same, and neither are our strategies. We take the time to understand the unique features of each listing and its target audience. 
+					This allows us to develop customized content strategies that effectively highlight what makes each property special, whether it’s a charming historical home or a sleek modern apartment.</p>
                 </div>
               </div> <!-- End Icon Box -->
 
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="col-md-6 py-2" data-aos="fade-up" data-aos-delay="500">
                 <div class="icon-box">
                   <i class="fa fa-heartbeat"></i>
-                  <h3>Bring Ideas to Life</h3>
-                  <p>Truly, our strategy will be the chameleon of the digital world, effortlessly surpassing your wildest expectations. It's almost as if we possess a crystal ball to foresee your every need. </p>
+                  <h3>Proven Results</h3>
+                  <p>Our track record speaks for itself. By employing innovative content strategies and focusing on high-quality production, we’ve consistently delivered impressive results for our clients. 
+					Our content not only attracts more views but also generates higher engagement and faster sales. </p>
                 </div>
               </div> <!-- End Icon Box -->
 
@@ -891,28 +1037,31 @@
 
 	    <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing">
-	        <div class="row pt-5">
+	        <div class="row my-5">
 			 
-			    <div class="col-12 p-5">
+			    <div class="col-12 p-lg-5">
 					<div class="heading-layout">
 						<small class="small-heading">Pricing</small>
 						<h1 class="heading-text">Book With Us</h1>
 					</div>
                 </div>
             </div>
-        <div class="row p-5">
+        <div class="row p-lg-5">
 
           <div class="col-lg-4 col-md-6">
             <div class="box" data-aos="zoom-in" data-aos-delay="200">
               <h3>Photography</h3>
-			  <h6 class="py-3"> Starting From </h6>
-              <h4 class="py-3"><sup>AED</sup>100</h4>
-              <ul class="mt-3">
-                <li> Property Photoshoot </li>
-                <li> New Launch Photoshoot </li>
-                <li> Walk Through Photoshoot </li>
-                <li> Construction Photoshoot </li>
-                <li> Luxury Life Style Shoot</li>
+			  <h6 class="py-3 py-lg-3"> Starting From </h6>
+              <h4 class="py-lg-3"><sup>AED</sup>100</h4>
+			   <h6 class="py-3 py-lg-5"> Package Includes:</h6>
+              <ul>
+							
+                <li> <i class="fa fa-arrow-right"></i> <span> High-End Property Photography </span></li>
+				<li> <i class="fa fa-arrow-right"></i> <span> Twilight and Sunset Photography </span></li>
+				<li> <i class="fa fa-arrow-right"></i> <span>  Aerial Photography </span></li>
+				<li> <i class="fa fa-arrow-right"></i> <span> 360-Degree Photography </span></li>
+				<li> <i class="fa fa-arrow-right"></i> <span> Lifestyle and Detail Shots </span></li>
+				<li> <i class="fa fa-arrow-right"></i> <span>  Interior and Exterior Staging </span></li>
               </ul>
               <!-- <div class="btn-wrap"> -->
                 <!-- <a href="#" class="btn-buy">Buy Now</a> -->
@@ -925,12 +1074,14 @@
               <h3>Videography</h3>
 			  <h6 class="py-3"> Starting From </h6>
               <h4 class="py-3"><sup>AED</sup>500</h4>
-              <ul class="mt-3">
-                <li> Property Photoshoot </li>
-                <li> New Launch Photoshoot </li>
-                <li> Walk Through Photoshoot </li>
-                <li> Construction Photoshoot </li>
-                <li> Luxury Life Style Shoot</li>
+			  <h6 class="py-5"> Package Includes:</h6>
+              <ul>			
+                <li> <i class="fa fa-arrow-right"></i> <span> Property Tours </span></li>
+				<li> <i class="fa fa-arrow-right"></i> <span> Cinematic Drone Footage </span></li>
+				<li> <i class="fa fa-arrow-right"></i> <span> Promotional Teasers </span></li>
+				<li> <i class="fa fa-arrow-right"></i> <span> 3D Virtual Tours </span></li>
+				<li> <i class="fa fa-arrow-right"></i> <span> Lifestyle and Community Videos </span></li>
+				<li> <i class="fa fa-arrow-right"></i> <span> Agent Walk Through Videos </span></li>
               </ul>
               <!-- <div class="btn-wrap"> -->
                 <!-- <a href="#" class="btn-buy">Buy Now</a> -->
@@ -943,12 +1094,14 @@
               <h3>Events / Life Style</h3>
 			  <h6 class="py-3"> Starting From </h6>
               <h4 class="py-3"><sup>AED</sup>650</h4>
-              <ul class="mt-3">
-                <li> Property Photoshoot </li>
-                <li> New Launch Photoshoot </li>
-                <li> Walk Through Photoshoot </li>
-                <li> Construction Photoshoot </li>
-                <li> Luxury Life Style Shoot</li>
+			  <h6 class="py-5"> Package Includes:</h6>
+              <ul>
+                <li> <i class="fa fa-arrow-right"></i> <span> Corporate Shoots </span></li>
+				<li> <i class="fa fa-arrow-right"></i> <span> Company Profile Videography </span></li>
+				<li> <i class="fa fa-arrow-right"></i> <span>Interactive Digital Displays </span></li>
+				<li> <i class="fa fa-arrow-right"></i> <span> Exclusive Property Showcases </span></li>
+				<li> <i class="fa fa-arrow-right"></i> <span> Lifestyle Content Creation </span></li>
+				<li> <i class="fa fa-arrow-right"></i> <span> Luxury Life & Air BNB Shoots </span></li>
               </ul>
               <!-- <div class="btn-wrap"> -->
                 <!-- <a href="#" class="btn-buy">Buy Now</a> -->
@@ -965,17 +1118,19 @@
     <!-- Call To Action Section End -->
 
     <!-- Footer Section Begin -->
-    <footer class="footer px-5">
+    <footer class="footer px-2 px-lg-5 mt-3 mt-lg-0">
         <div>
             <div class="footer__top">
                 <div class="row">
-				<div class="col-12 d-flex align-items-center">
-                    <div class="col-lg-4 col-md-6 d-flex">
+				<div class="col-12 p-0 d-flex align-items-center">
+                    <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
                         <div class="footer__top__logo">
-                            <a href="#"><img class="w-75" src="img/logos/160by160.png" alt=""></a>
+                            <a href="#">
+								<img class="w-75" src="img/logos/160by160.png" alt="">
+							</a>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-md-6 d-flex justify-content-end">
+                    <div class="col-lg-8 col-md-6 col-sm-6 d-flex justify-content-end">
                         <div class="footer__top__social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
@@ -988,22 +1143,22 @@
                 </div>
             </div>
             <div class="footer__option">
-                <div class="col-12 justify-footer">
+                <div class="col-12 d-block d-lg-flex justify-footer">
                     <!-- <div class="col-6"> -->
-					 <div class="col-3 grid-display">
+					 <div class="col-lg-3 col-md-6 col-sm-12 grid-display">
                         <div class="footer__option__item">
 							<i class="fa fa-envelope"></i>
                             <a href="about.html" class="email">hello@realestatemediadxb.com </a>
                         </div>
-						<div class="footer__option__item">
+						<div class="footer__option__item pt-3 pt-lg-0">
 							<i class="fa fa-phone"></i>
                             <a href="about.html" class="email"> +971 556748265 </a>
                         </div>
 						<!-- </div> -->
 					</div>	
-					 <div class="col-3 grid-display">	
+					 <div class="col-lg-3 col-md-6 col-sm-12 grid-display pt-3 pt-lg-0">	
 						<div class="d-flex footer__option__item">
-							<i class="fa fa-map-marker"></i>
+							<i class="fa fa-map"></i>
                             <a href="about.html" class="email"> 
 								Dubai Silicon Oasis,
 								Le Solarium Tower,
@@ -1011,7 +1166,7 @@
 							</a>
                         </div>
 						
-						<div class="d-flex footer__option__item">
+						<div class="d-flex footer__option__item pt-3 pt-lg-0">
 							<i class="fa fa-clock-o"></i>
                             <a href="about.html" class="email">
 								Monday–Friday: 09:00 AM – 18:00 PM
@@ -1019,7 +1174,7 @@
 							</a>
                         </div>
 					</div>
-                    <div class="col-lg-2 col-md-3 col-sm-3">
+                    <div class="col-lg-2 col-md-6 col-sm-6 pt-3 pt-lg-0">
                         <div class="footer__option__item">
                             <h5>Who we are</h5>
                             <ul>
@@ -1030,7 +1185,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3">
+                    <div class="col-lg-2 col-md-6 col-sm-6 pt-3 pt-lg-0">
                         <div class="footer__option__item">
                             <h5>Our work</h5>
                             <ul>
@@ -1041,16 +1196,7 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- <div class="col-lg-4 col-md-12"> -->
-                        <!-- <div class="footer__option__item"> -->
-                            <!-- <h5>Newsletter</h5> -->
-                            <!-- <p>Videoprah is an award-winning, full-service production company specializing.</p> -->
-                            <!-- <form action="#"> -->
-                                <!-- <input type="text" placeholder="Email"> -->
-                                <!-- <button type="submit"><i class="fa fa-send"></i></button> -->
-                            <!-- </form> -->
-                        <!-- </div> -->
-                    <!-- </div> -->
+
                 </div>
             </div>
             <div class="footer__copyright">

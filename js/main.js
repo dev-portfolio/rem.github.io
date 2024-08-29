@@ -9,7 +9,56 @@
 
 'use strict';
 
-(function ($) {
+(function() {
+
+  /**
+   * Apply .scrolled class to the body as the page is scrolled down
+   */
+  function toggleScrolled() {
+    const selectBody = document.querySelector('body');
+    const selectHeader = document.querySelector('#header');
+    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
+    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+  }
+
+  document.addEventListener('scroll', toggleScrolled);
+  window.addEventListener('load', toggleScrolled);
+
+  /**
+   * Mobile nav toggle
+   */
+  const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+
+  function mobileNavToogle() {
+    document.querySelector('body').classList.toggle('mobile-nav-active');
+    mobileNavToggleBtn.classList.toggle('bi-list');
+    mobileNavToggleBtn.classList.toggle('bi-x');
+  }
+  mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
+
+  /**
+   * Hide mobile nav on same-page/hash links
+   */
+  document.querySelectorAll('#navmenu a').forEach(navmenu => {
+    navmenu.addEventListener('click', () => {
+      if (document.querySelector('.mobile-nav-active')) {
+        mobileNavToogle();
+      }
+    });
+
+  });
+
+  /**
+   * Toggle mobile nav dropdowns
+   */
+  document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
+    navmenu.addEventListener('click', function(e) {
+      e.preventDefault();
+      this.parentNode.classList.toggle('active');
+      this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
+      e.stopImmediatePropagation();
+    });
+  });
 
     /*------------------
         Preloader
@@ -202,13 +251,23 @@
    * Animation on scroll
    */
   // window.addEventListener('load', () => {
+    // AOS.init({
+      // duration: 1000,
+      // easing: 'ease-in-out',
+      // once: true,
+      // mirror: false
+    // })
+  // });
+  
+    function aosInit() {
     AOS.init({
-      duration: 1000,
+      duration: 1,
       easing: 'ease-in-out',
       once: true,
       mirror: false
-    })
-  // });
+    });
+  }
+  window.addEventListener('load', aosInit);
 
   $(document).ready( function (e) {
     var cards = document.querySelectorAll(".service-card");
@@ -229,26 +288,27 @@
           $( ".service-card" ).removeClass( "showSlide");
           cards[index].classList.add("showSlide");
         }
-
         if(index == 1) {
           cards[index].classList.add("slideIn");
           $( ".service-card" ).removeClass( "showSlide");
           cards[index].classList.add("showSlide");
         }
-
         if(index == 2) {
           cards[index].classList.add("slideIn");
           $( ".service-card" ).removeClass( "showSlide");
           cards[index].classList.add("showSlide");
         }
-
         if(index == 3) {
           cards[index].classList.add("slideIn");
           $( ".service-card" ).removeClass( "showSlide");
           cards[index].classList.add("showSlide");
         }
-
         if(index == 4) {
+          cards[index].classList.add("slideIn");
+          $( ".service-card" ).removeClass( "showSlide");
+          cards[index].classList.add("showSlide");
+        }
+		if(index == 5) {
           cards[index].classList.add("slideIn");
           $( ".service-card" ).removeClass( "showSlide");
           cards[index].classList.add("showSlide");
@@ -262,5 +322,7 @@
 
 
   });
+  
+
 
 })(jQuery);

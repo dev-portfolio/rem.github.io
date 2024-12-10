@@ -238,30 +238,9 @@
 	  /**
    * Animation on scroll
    */
-  window.addEventListener('load', () => {
-	AOS.init({
-	  duration: 1000,
-	  easing: 'ease-in-out',
-	  once: true,
-	  mirror: false
-	})
-  });
-  
-    /**
-   * Animation on scroll
-   */
-  // window.addEventListener('load', () => {
-    // AOS.init({
-      // duration: 1000,
-      // easing: 'ease-in-out',
-      // once: true,
-      // mirror: false
-    // })
-  // });
-  
-    function aosInit() {
+  function aosInit() {
     AOS.init({
-      duration: 1,
+      duration: 600,
       easing: 'ease-in-out',
       once: true,
       mirror: false
